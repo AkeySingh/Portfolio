@@ -26,7 +26,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-2xl font-bold text-white dark:text-white">
           Abhishek
         </h1>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
               >
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-gray-800 dark:text-white hover:text-blue-500 transition-all duration-300"
+                  className="text-white dark:text-white hover:text-blue-500 transition-all duration-300"
                 >
                   {item}
                 </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
             {darkMode ? "☀️ Light" : "🌙 Dark"}
           </button>
           <button
-            className="md:hidden text-gray-800 dark:text-white"
+            className="md:hidden text-white-800 dark:text-white"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -70,7 +70,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <motion.ul
-          className="md:hidden bg-white dark:bg-gray-800 absolute top-16 left-0 w-full flex flex-col gap-4 p-4 shadow-lg"
+          className="md:hidden bg-white dark:bg-gray-800 dark:text-white absolute top-16 left-0 w-full flex flex-col gap-4 p-4 shadow-lg"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
@@ -80,7 +80,7 @@ const Navbar = () => {
               <li key={index} className="text-center">
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-gray-800 dark:text-white block py-2 hover:text-blue-500 transition-all"
+                  className="text-white dark:text-white block py-2 hover:text-blue-500 transition-all"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item}
