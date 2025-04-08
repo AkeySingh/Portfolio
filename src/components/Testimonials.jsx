@@ -27,7 +27,7 @@ const Testimonials = () => {
       <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
         What Clients Say
       </h2>
-      <div className="flex justify-center gap-6 mt-6">
+      <div className="flex justify-center flex-wrap gap-6 mt-6">
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={index}

@@ -51,7 +51,7 @@ const Navbar = () => {
         </ul>
 
         {/* Dark Mode & Mobile Menu Button */}
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           <button
             className="bg-gray-700 px-3 py-1 rounded-lg hover:bg-gray-600 text-white"
             onClick={() => setDarkMode(!darkMode)}
@@ -64,7 +64,7 @@ const Navbar = () => {
           >
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Menu */}
